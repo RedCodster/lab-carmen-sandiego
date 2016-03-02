@@ -73,4 +73,4 @@ SELECT countrycode, COUNT(countrycode) AS count_language FROM countrylanguage GR
 
 SELECT name, continent, indepyear FROM country WHERE continent='Asia' AND indepyear BETWEEN 1940 AND 1950 ORDER BY indepyear DESC;
 
-SELECT countrycode, language FROM countrylanguage WHERE (language = 'English' AND percentage=0) OR language != 'English' ORDER BY percentage ASC
+SELECT countrycode, percentage, language FROM countrylanguage WHERE (language = 'English' AND percentage=0) OR language != 'English' ORDER BY percentage ASC;
